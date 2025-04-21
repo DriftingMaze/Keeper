@@ -10,4 +10,8 @@ const pool = new pkg.Pool({
   ssl: isProduction ? { rejectUnauthorized: false } : false,
 });
 
-export const query = (text, params) => pool.query(text, params);
+const db = {
+  query: (text, params) => pool.query(text, params),
+};
+
+export default db;

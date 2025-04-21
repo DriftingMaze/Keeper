@@ -1,7 +1,7 @@
 import express from 'express';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import * as db from '../db/index.js';
+import db from '../db/index.js';
 
 const router = express.Router();
 
@@ -34,6 +34,7 @@ router.post('/register', async (req, res) => {
     res.status(500).json({ message: 'Server error' });
   }
 });
+
 
 router.post('/login', async (req, res) => {
   try {
