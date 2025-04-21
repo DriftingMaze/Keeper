@@ -3,7 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
-
+import routeValidator from './middleware/routeValidators.js';
 import authRoutes from './routes/auth.js';
 import notesRoutes from './routes/notes.js';
 
@@ -13,6 +13,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
+
+app.use(routeValidator);
 
 app.use(cors({
   origin: process.env.NODE_ENV === 'production'
