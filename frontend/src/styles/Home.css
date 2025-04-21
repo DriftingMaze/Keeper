@@ -1,0 +1,67 @@
+.home {
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 5%;
+}
+
+.hero {
+  margin-bottom: 60px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #f5ba13;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.auth-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  background-color: white;
+  color: #f5ba13;
+  border: 2px solid #f5ba13;
+}
+
+.btn:hover {
+  background-color: #f5ba13;
+  color: white;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.feature {
+  width: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+}
+
+.feature h3 {
+  color: #f5ba13;
+  margin-bottom: 10px;
+}
+
